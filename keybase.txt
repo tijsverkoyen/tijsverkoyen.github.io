@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/tijsverkoyen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://verkoyen.eu
+  * I am tijsverkoyen (https://keybase.io/tijsverkoyen) on keybase.
+  * I have a public key with fingerprint 98F4 11C9 A663 766E 9B95  92F0 5E8E 4608 6547 30E5
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "98f411c9a663766e9b9592f05e8e4608654730e5",
+            "host": "keybase.io",
+            "key_id": "5e8e4608654730e5",
+            "uid": "1b130e0077575b95273ab4b2993c0b00",
+            "username": "tijsverkoyen"
+        },
+        "service": {
+            "hostname": "verkoyen.eu",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1401286205,
+    "expire_in": 157680000,
+    "prev": "a6cb77261d45bf7972837edccd116436c684dacec8bd402ff7ac51f8e553acbd",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.17
+Comment: https://keybase.io/crypto
+
+yMHoAnicbZFrSBRRFMd381EtaiUKtR96jGwkmMzMznNBxdCCih6YhJA7zuPOOj5m
+1pnZzQdikRoIaWGZEUkGJYqaGKZEmFb6wSLUkMgkLCgJzagkKtS8I/qt++Vyzv/3
+/597Oc8jQ2wOu7f24CZwCP1kfzGwELBlVM0nlSGCJpUgnjIkH6xesqL6gO7XFdVE
+PAjLyASGiSxPUW6aogArsCSLyygJGEBQKEORBO1GAYkkILmaYTlgjMAbIFHRYA8W
+nCLB7n/4wKqACRisUZSmSZqE4Tjt5gVCwFnWLaICilqgAXSVLwSQNpU8Iwj0fK0E
+qEh5AgKVoCJCpWx1/Bq1TiSCALT7dc3URK0ACrmm6fdYPrPEb4FngcCtRXCCokrw
+69AA7YaiqYgHg6RoKlYmRqAYzlA4SiYgoNiv6IBTLIKkKQaFxxoDgjCSp0SBpnEK
+kwhSkGmWxhk3DSRRlDCMItyUSDGExItAZASJQHFZpnmRxGQGkKSbFwUJzjdAkaoh
+HgI+k/fBSEPxqbwZ0AFS/nTgTKjN7rCFh22wlmdzbN66vlLH1MZ/wZFG75hx4PpE
+h5THpWC9d/Gi2eLBRW780nKY90ok+y6qyswOHzNrXN9vJ4e8WSzO8fb3XY2br+Za
+krW4vY60roEff18P8bGTL6dDv1xWRpu7P1c8caa1LH3tMZdq5+vaj/wMmTWc8VN9
+9/V0V+OfQrPy2qmZPSNZ5M2j0fRgw/nh/ojSxjqn/9GWXRmumI6U7HpCiCvI7HbV
+Y+lJ22diK9oX5k6P5X0oOPzK2VRxsvvheH7UvW3jTQ13jBtdx6vjI1y/e1I7dw/X
+c8eia85lRQFtAlQ+y7o4t+zbgUi/+v3T9szUzret3yZLHzweupXTuvPjvrbR9/t7
+TzS3xVxYAcf0FmY=
+=CiQT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tijsverkoyen
+
+==================================================================
+
