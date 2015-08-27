@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{% if page.language %}{{ page.language }}{% else %}en{% endif %}">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<div class="page-content">
+  <div class="wrapper">
+  </div>
+</div>
+
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      {% include menu.html %}
+    </nav>
+    <h3 class="text-muted">{{ site.title }}</h3>
+  </div>
+
+  {{ content }}
+
+  {% include footer.html %}
+</div>
+<!-- /container -->
+
+{% include footer_scripts.html %}
+
+</body>
+</html>
+
