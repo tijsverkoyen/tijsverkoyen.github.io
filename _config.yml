@@ -6,5 +6,8 @@ description: This is a site from/about Tijs Verkoyen.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://verkoyen.eu" # the base hostname & protocol for your site
 
+# Post settings
+permalink: /blog/:year/:month/:title
+
 # Build settings
 markdown: kramdown
