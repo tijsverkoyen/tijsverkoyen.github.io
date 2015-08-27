@@ -69,6 +69,20 @@ body {
   margin-top: 28px;
 }
 
+.about {
+  margin: 40px 0;
+
+  .aboutServiceWidget {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */

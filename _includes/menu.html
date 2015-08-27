@@ -2,7 +2,10 @@
   <li role="presentation">
     <a href="/">Home</a>
   </li>
+  <li role="presentation" {% if page.selected_menu == 'about' %} class="active"{% endif %}>
+  <a href="/about">About</a>
+  </li>
   <li role="presentation" {% if page.selected_menu == 'blog' %} class="active"{% endif %}>
-  <a href="/blog">Blog</a>
+    <a href="/blog">Blog</a>
   </li>
 </ul>

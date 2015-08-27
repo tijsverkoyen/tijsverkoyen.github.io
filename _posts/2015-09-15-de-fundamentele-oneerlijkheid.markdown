@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-08-26 16:16:26
+title:  "De fundamentele oneerlijkheid van werknemers"
+date:   2015-09-15 13:37:00
 image:  2015-08-26-welcome-to-jekyll.png
+language: nl
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
