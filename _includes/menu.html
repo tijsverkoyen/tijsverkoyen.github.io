@@ -1,4 +1,8 @@
 <ul class="nav nav-pills pull-right">
-  <li role="presentation" class="active"><a href="/">Home</a></li>
-  <li role="presentation"><a href="#">Posts</a></li>
+  <li role="presentation">
+    <a href="/">Home</a>
+  </li>
+  <li role="presentation" {% if page.selected_menu == 'blog' %} class="active"{% endif %}>
+  <a href="/blog">Blog</a>
+  </li>
 </ul>
