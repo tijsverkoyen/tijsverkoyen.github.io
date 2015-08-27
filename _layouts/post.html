@@ -21,32 +21,37 @@
     <h3 class="text-muted">{{ site.title }}</h3>
   </div>
 
-  <div class="page-header">
-    <h1>
-      {{ page.title }}
-      <small>
-        posted on {{ page.date | date : '%d/%m/%Y' }}
-      </small>
-    </h1>
-  </div>
+  <div itemid="{{ page.id }}" itemscope itemtype="http://schema.org/Article">
+    <div class="page-header">
+      <h1>
+        <span itemprop="name">{{ page.title }}</span>
+        <span itemprop="author" class="hidden">by Tijs Verkoyen</span>
+        <small>
+          posted on <span itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date : '%d/%m/%Y' }}</span>
+        </small>
+      </h1>
+    </div>
 
-  {{ content }}
+    <div itemprop="description" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </div>
 
   <nav>
     <ul class="pager">
       {% if page.next %}
-        <li class="previous">
-          <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">
-            <span aria-hidden="true">&larr;</span> Next <span class="hidden">post: {{ page.next.title }}</span>
-          </a>
-        </li>
+      <li class="previous">
+        <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">
+          <span aria-hidden="true">&larr;</span> Next <span class="hidden">post: {{ page.next.title }}</span>
+        </a>
+      </li>
       {% endif %}
       {% if page.previous %}
-        <li class="next">
-          <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}">
-            Previous <span class="hidden">post: {{ page.previous.title }}</span><span aria-hidden="true">&rarr;</span>
-          </a>
-        </li>
+      <li class="next">
+        <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}">
+          Previous <span class="hidden">post: {{ page.previous.title }}</span><span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
       {% endif %}
     </ul>
   </nav>
