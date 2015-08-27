@@ -32,12 +32,27 @@
 
   {{ content }}
 
+  <nav>
+    <ul class="pager">
+      {% if page.next %}
+        <li class="previous">
+          <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">
+            <span aria-hidden="true">&larr;</span> Next <span class="hidden">post: {{ page.next.title }}</span>
+          </a>
+        </li>
+      {% endif %}
+      {% if page.previous %}
+        <li class="next">
+          <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}">
+            Previous <span class="hidden">post: {{ page.previous.title }}</span><span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+
   {% include footer.html %}
 </div>
-<!-- /container -->
-
-{% include footer_scripts.html %}
-
 </body>
 </html>
 
