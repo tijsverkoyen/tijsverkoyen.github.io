@@ -4,6 +4,7 @@ title:  "De fundamentele oneerlijkheid van werknemers"
 date:   2015-09-15 13:37:00
 image:  2015-08-26-welcome-to-jekyll.png
 language: nl
+published: false
 ---
 
 Als SumoCoders zijn we vrij snel gegroeid, we zijn ondertussen met 13 mensen. Elk met zijn eigen persoonlijkheid, eigenheden, ... Het was ook een keuze die we gemaakt hebben om personeel te werk te stellen. Een keuze die ons toelaat om andere, grotere, meer, ... projecten aan te nemen.
