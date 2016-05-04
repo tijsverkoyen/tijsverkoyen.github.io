@@ -1,0 +1,18 @@
+// fonts
+$default-font-size: 14px;
+
+// Padding & margins
+$default-vertical-padding: $default-font-size * 2;
+$default-horizontal-padding: $default-font-size * 2;
+$default-horizontal-margin: $default-font-size * 2;
+$default-vertical-margin: $default-font-size * 2;
+
+// Colors
+$white: #fff;
+$accent-color: #18bc9c;
+$text-color-inverse: $white;
+
+// Background colors
+$background-darkest: #233140;
+$background-dark: lighten($background-darkest, 7);
+

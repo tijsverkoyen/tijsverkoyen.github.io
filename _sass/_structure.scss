@@ -1,0 +1,150 @@
+// General
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: $default-font-size * 1.4;
+}
+
+p.small {
+  font-size: 1.3em;
+}
+
+a, a:active, a:hover, a:focus {
+  outline-color: $accent-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+// Navbar
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+
+  .navbar-nav {
+    letter-spacing: 1px;
+
+    li {
+      a {
+        color: $white;
+        transition: all 0.3s;
+
+        &:active, &:hover, &:focus {
+          background-color: $background-darkest;
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+.navbar-default,
+.navbar-inverse {
+  border: none;
+  background-color: $background-dark;
+
+  .navbar-nav > .active > a {
+    color: $accent-color;
+    background-color: $background-darkest;
+  }
+}
+
+@media(min-width: 768px) {
+  .navbar-fixed-top {
+    padding: $default-vertical-padding 0;
+    //transition: padding 0.3s;
+
+    .navbar-brand {
+      font-size: $default-font-size * 2;
+      color: $white;
+      transition: all 0.3s;
+
+      &:active, &:hover, &:focus {
+        color: $accent-color;
+      }
+    }
+  }
+  .navbar-fixed-top.navbar-shrink {
+    padding: $default-vertical-padding / 2 0;
+
+    .navbar-brand {
+      font-size: $default-font-size * 1.5;
+    }
+  }
+}
+
+
+// Header
+header {
+  text-align: center;
+  background: $accent-color;
+  color: white;
+  .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .intro-text {
+    .name {
+      display: block;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2em;
+    }
+    .skills {
+      font-size: 1.25em;
+      font-weight: 300;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  header {
+    .container {
+      padding-top: 200px;
+      padding-bottom: 100px;
+    }
+    .intro-text {
+      .name {
+        font-size: 4.75em;
+      }
+      .skills {
+        font-size: 1.75em;
+      }
+    }
+  }
+}
+
+
+// Footer
+footer {
+  color: $text-color-inverse;
+
+  h3 {
+    margin-bottom: $default-vertical-margin;
+  }
+
+  .footer-col {
+    margin-bottom: $default-vertical-margin * 1.75;
+  }
+
+  .footer-above {
+    background-color: $background-dark;
+    padding-top: $default-vertical-padding * 1.75;
+  }
+
+  .footer-below {
+    background-color: $background-darkest;
+    padding: $default-vertical-padding 0;
+  }
+}

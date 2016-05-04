@@ -1,0 +1,25 @@
+.btn-social {
+  color: $white;
+  border: 2px solid $white;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 20px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  width: 50px;
+
+  &:active, &:hover, &:focus {
+    background: $white;
+    color: $accent-color;
+  }
+}
+
+.btn-outline {
+  border: 2px solid 2px $white;
+  transition: all .3s ease-in-out;
+
+  &:active, &:hover, &:focus {
+    color: $accent-color;
+  }
+}

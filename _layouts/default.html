@@ -3,28 +3,14 @@
 
 {% include head.html %}
 
-<body>
+<body id="page-top" class="index">
 {% include scripts_after_body.html %}
 
-{% include header.html %}
+{% include warning.html %}
+{% include menu.html %}
 
-<div class="page-content">
-  <div class="wrapper">
-  </div>
-</div>
-
-<div class="container">
-  <div class="header clearfix">
-    <nav>
-      {% include menu.html %}
-    </nav>
-    <h3 class="text-muted">{{ site.title }}</h3>
-  </div>
-
-  {{ content }}
-
-  {% include footer.html %}
-</div>
+{{ content }}
+{% include footer.html %}
 </body>
 </html>
 
