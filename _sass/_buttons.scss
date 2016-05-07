@@ -12,6 +12,8 @@
   &:active, &:hover, &:focus {
     background: $white;
     color: $accent-color;
+    text-decoration: none;
+    border: 2px solid $white;
   }
 }
 
@@ -21,5 +23,25 @@
 
   &:active, &:hover, &:focus {
     color: $accent-color;
+  }
+}
+
+.pager {
+  li > a {
+    border: 1px solid $accent-color;
+    transition: all .3s ease-in-out;
+
+    &:active, &:hover, &:focus {
+      background-color: $accent-color;
+      color: $white;
+    }
+  }
+
+  li > span {
+    border: 1px solid lighten($accent-color, 50%);
+  }
+
+  .disabled > span {
+    color: lighten(#333, 50%);
   }
 }

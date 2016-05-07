@@ -2,7 +2,7 @@ hr.star-light,
 hr.star-primary {
   padding: 0;
   border: none;
-  border-top: solid 5px;
+  border-top: solid 3px;
   text-align: center;
   max-width: 250px;
   margin: $default-vertical-margin auto;
@@ -38,4 +38,14 @@ hr.star-primary {
 
 img.me-picture {
   max-width: 320px;
+  border: 1px solid $white;
+}
+
+.page-scroll {
+  .btn {
+    border-radius: 0;
+    width: 100%;
+    background-color: $background-dark;
+    border: none;
+  }
 }

@@ -1,71 +1,90 @@
 ---
 layout: default
 selected_menu: blog
+title: Blog
 ---
-<div class="jumbotron">
-  <h1>My personal blog</h1>
-
-  <p class="lead">This blog is just a list of post of my opinions/feelings/...
-    It will be a mix of Dutch and English, mostly about my life,
-    <a href="http://sumocoders.be">my company (SumoCoders)</a>, my frustrations, ...</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-12">
+<section id="content">
+  <div class="container text-center">
     <div class="row">
-      {% for post in paginator.posts %}
-      <div class="col-sm-6 col-md-6">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          <div class="thumbnail">
-            {% if post.image %}
-            <img src="/assets/posts/{{ post.image }}" alt="" />
-            {% else %}
-            <!-- @todo create default image -->
-            <img src="..." alt="" />
-            {% endif %}
-
-            <div class="caption">
-              <h2>
-                {{ post.title }}
-                {% if post.language == 'nl' %}
-                 <small>(<span class="hidden"> is writen in </span>Dutch)</small>
-                {% endif %}
-              </h2>
-
-              <p>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              </p>
-            </div>
-          </div>
-        </a>
+      <div class="col-lg-12">
+        <h2>My personal blog</h2>
+        <hr class="star-primary">
       </div>
-      {% endfor %}
     </div>
     <div class="row">
-      <nav>
-        <ul class="pager">
-          {% if paginator.previous_page %}
-          <li class="previous">
-            <a href="{{ paginator.previous_page_path }}">
-              <span aria-hidden="true">&larr;</span> Newer
+      <div class="col-md-8 col-md-offset-2">
+        <p class="lead">
+          This blog is just a list of post of my opinions/feelings/...
+        </p>
+        <p>
+          It will be a mix of Dutch and English, mostly about my life,
+          <a href="http://sumocoders.be">my company (SumoCoders)</a>, my frustrations, &hellip;
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="blog-overview">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
+          {% for post in paginator.posts %}
+          <div class="col-sm-4 item">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="link">
+              <div class="eye">
+                <div class="content">
+                  <i class="fa fa-eye"></i>
+                </div>
+              </div>
+              {% if post.image %}
+              <img src="/assets/posts/{{ post.image }}" class="img-responsive img-circle" alt="">
+              {% else %}
+              <!-- @todo create default image -->
+              <img src="http://placehold.it/512x512" class="img-responsive img-circle" alt="">
+              {% endif %}
             </a>
-          </li>
-          {% endif %}
-          <li class="next {% if paginator.next_page %}{% else %}disabled{% endif %}">
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path }}">
-            {% else %}
+            <h2 class="text-center">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title }}
+                {% if post.language == 'nl' %}
+                <small>(<span class="hidden"> is writen in </span>Dutch)</small>
+                {% endif %}
+              </a>
+            </h2>
+            <p class="text-center">
+              {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <nav>
+            <ul class="pager">
+              {% if paginator.previous_page %}
+              <li class="previous">
+                <a href="{{ paginator.previous_page_path }}">
+                  <span aria-hidden="true">&larr;</span> Newer
+                </a>
+              </li>
+              {% endif %}
+              <li class="next {% if paginator.next_page %}{% else %}disabled{% endif %}">
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}">
+                  {% else %}
               <span>
             {% endif %}
                 Older <span aria-hidden="true">&rarr;</span>
             {% if paginator.next_page %}
-              </a>
-            {% else %}
-              </span>
-            {% endif %}
-          </li>
-        </ul>
-      </nav>
+                </a>
+                {% else %}
+                </span>
+                {% endif %}
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
