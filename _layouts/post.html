@@ -3,65 +3,74 @@
 
 {% include head.html %}
 
-<body>
+<body id="page-top" class="post">
 {% include scripts_after_body.html %}
 
+{% include menu.html %}
+{% include warning.html %}
 
-<div class="page-content">
-  <div class="wrapper">
-  </div>
-</div>
+<section id="content">
+  <div class="container" id="blog-post">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <article class="row" itemid="{{ page.id }}" itemscope itemtype="http://schema.org/Article">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <h1>
+                <span itemprop="name">{{ page.title }}</span>
+              </h1>
+              <hr class="star-primary">
+              <p class="meta-info">
+                <span class="hidden">
+                  {% if page.language == 'nl' %}
+                  door
+                  {% else %}
+                  by
+                  {% endif %}
+                  <span itemprop="author">Tijs Verkoyen</span>
+                </span>
+                <small>
+                  {% if page.language == 'nl' %}
+                  gepubliceerd op
+                  {% else %}
+                  posted on
+                  {% endif %}
+                  <span itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date : '%d/%m/%Y' }}</span>.
+                </small>
+              </p>
+            </div>
+          </div>
+          <div itemprop="description" itemprop="articleBody">
+            {{ content }}
+          </div>
+        </article>
 
-<div class="container">
-  <div class="header clearfix">
-    <nav>
-      {% include menu.html %}
-    </nav>
-    <h3 class="text-muted">{{ site.title }}</h3>
-  </div>
-
-  <div itemid="{{ page.id }}" itemscope itemtype="http://schema.org/Article">
-    <div class="page-header">
-      <h1>
-        <span itemprop="name">{{ page.title }}</span>
-        <span itemprop="author" class="hidden">by Tijs Verkoyen</span>
-        <small>
-          {% if page.language == 'nl' %}
-            gepubliceerd op
-          {% else %}
-            posted on
-          {% endif %}
-          <span itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date : '%d/%m/%Y' }}</span>.
-        </small>
-      </h1>
+        <div class="row">
+          <nav>
+            <ul class="pager">
+              {% if page.next %}
+              <li class="previous">
+                <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">
+                  <span aria-hidden="true">&larr;</span> Next <span class="hidden">post: {{ page.next.title }}</span>
+                </a>
+              </li>
+              {% endif %}
+              {% if page.previous %}
+              <li class="next">
+                <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}">
+                  Previous
+                  <span class="hidden">post: {{ page.previous.title }}</span><span aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+              {% endif %}
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-
-    <div itemprop="description" itemprop="articleBody">
-      {{ content }}
-    </div>
   </div>
+</section>
 
-  <nav>
-    <ul class="pager">
-      {% if page.next %}
-      <li class="previous">
-        <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">
-          <span aria-hidden="true">&larr;</span> Next <span class="hidden">post: {{ page.next.title }}</span>
-        </a>
-      </li>
-      {% endif %}
-      {% if page.previous %}
-      <li class="next">
-        <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}">
-          Previous <span class="hidden">post: {{ page.previous.title }}</span><span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
-      {% endif %}
-    </ul>
-  </nav>
-
-  {% include footer.html %}
-</div>
+{% include footer.html %}
 </body>
 </html>
-

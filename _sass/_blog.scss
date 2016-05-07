@@ -50,8 +50,14 @@
   }
 }
 
-* {
-  z-index: 2;
+#blog-post {
+  article hr.star-primary {
+    margin-bottom: $default-vertical-margin / 2;
+  }
+
+  p.meta-info {
+    margin-bottom: $default-vertical-margin;
+  }
 }
 
 @media(min-width: 767px) {
