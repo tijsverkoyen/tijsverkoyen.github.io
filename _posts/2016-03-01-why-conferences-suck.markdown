@@ -2,7 +2,6 @@
 layout: post
 title:  "Why conferences suck"
 date:   2016-03-01 13:37:00
-image:  2016-03-15-welcome-to-jekyll.png
 language: en
 published: false
 ---
