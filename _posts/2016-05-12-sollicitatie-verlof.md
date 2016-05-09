@@ -67,8 +67,10 @@ Enkele kleine aanpassingen lijken me ook voldoende:
   me persoonlijk maar normaal om hier echt verlof voor te gebruiken, want er is immers behoud van het loon.
 * Bij ontslag worden in samenspraak de dagen waarop er sollicitatie verlof genomen zal worden vastgelegd in de ontslagbrief.
   Zo kan iedereen perfect plannen.
-* Als men een contract heeft getekend dan vervalt het resterend sollicitatie verlof. Het lijkt me wat respectloos naar de
-  nieuwe werkgever dat men iets tekent om dan toch nog verder te zoeken naar een (betere) job.
+* Als men een contract heeft getekend dan vervalt het resterend sollicitatie verlof. Sollicitatie-verlof is een vangnet om
+  de kans te krijgen ander werk te vinden. Niet om zich te verbeteren want dan zou iedere werknemer recht hebben op dit 
+  verlof. Daarnaast is het ook nogal respectloos ten opzichte van de nieuwe werkgever om in te gaan op een zijn aanbod, maar
+  toch verder te zoeken.
 
 
 <small>Voor alle duidelijkheid: deze situaties hebben zich niet voorgedaan bij Sumo Coders, maar de aankondiging van een 
