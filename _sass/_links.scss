@@ -3,11 +3,11 @@ header {
     color: $background-dark;
     border-bottom: 1px solid $background-dark;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: color 0.3s;
 
     &:active, &:hover, &:focus {
       color: $white;
-      border-bottom-color: $white;
+      border-bottom: none;
       text-decoration: none;
     }
   }
@@ -16,10 +16,11 @@ header {
 #footer {
   a, .btn {
     color: $accent-color;
-    transition: all .3s ease-in-out;
+    transition: color .3s ease-in-out;
 
     &:active, &:hover, &:focus {
       color: $text-color-inverse;
+      border-bottom-color: $white;
     }
   }
 }

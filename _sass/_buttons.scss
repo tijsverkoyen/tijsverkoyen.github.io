@@ -22,7 +22,7 @@
   transition: all .3s ease-in-out;
 
   &:active, &:hover, &:focus {
-    color: $accent-color;
+    color: $accent-color !important;
   }
 }
 
