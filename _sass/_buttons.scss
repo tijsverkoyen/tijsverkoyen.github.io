@@ -29,6 +29,7 @@
 .pager {
   li > a {
     border: 1px solid $accent-color;
+    font-size: $default-font-size;
     transition: all .3s ease-in-out;
 
     &:active, &:hover, &:focus {
