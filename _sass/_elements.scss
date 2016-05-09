@@ -1,3 +1,4 @@
+// styling for the hr's with a centered star
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -36,16 +37,48 @@ hr.star-primary {
   }
 }
 
+// image styling for my own picture on the homepage
 img.me-picture {
   max-width: 320px;
   border: 1px solid $white;
 }
 
+// button to return to the top
 .page-scroll {
   .btn {
     border-radius: 0;
     width: 100%;
     background-color: $background-dark;
     border: none;
+  }
+}
+
+// quote styling
+blockquote {
+  background: $white;
+  border: 1px solid #e2e2e2;
+  border-radius: $default-vertical-padding / 8;
+  box-shadow: -7px -7px 20px #e2e2e2;
+  padding: $default-vertical-padding / 2 $default-horizontal-padding $default-vertical-padding / 4;
+  position: relative;
+  margin: $default-vertical-margin $default-horizontal-margin $default-vertical-margin * 2 $default-horizontal-margin * 2;
+
+  &:after {
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-top: solid 10px #e2e2e2;
+    content: '';
+    left: $default-horizontal-margin + 6px;
+    position: absolute;
+    top: 100%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -$default-vertical-padding;
+
+    &:before {
+      content: '';
+    }
   }
 }

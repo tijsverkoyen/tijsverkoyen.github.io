@@ -2,9 +2,6 @@
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-}
-
-p {
   font-size: $default-font-size * 1.4;
 }
 
@@ -15,12 +12,13 @@ p.small {
 a {
   color: $accent-color;
   outline-color: $accent-color;
+  text-decoration: none;
   transition: all 0.3s;
 
   &:active, &:hover, &:focus {
     color: $background-dark;
-    text-decoration: none;
     border-bottom: 1px solid $background-dark;
+    text-decoration: none;
   }
 }
 
@@ -168,5 +166,6 @@ footer {
   .footer-below {
     background-color: $background-darkest;
     padding: $default-vertical-padding 0;
+    font-size: $default-font-size;
   }
 }
