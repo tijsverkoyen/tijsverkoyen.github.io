@@ -4,6 +4,7 @@ title:  "Sollicitatie verlof"
 date:   2016-05-12 13:37:00
 image:  2016-05-12-sollicitatie-verlof.gif
 language: nl
+comments: true
 ---
 Net als andere zaakvoerders word ik af en toe geconfronteerd met iemand die een andere weg wil inslaan, en die dus het
 bedrijf verlaat. Daar is ook helemaal niks mis mee, soms groeien mensen uit elkaar, soms zoeken mensen een uitdaging die
