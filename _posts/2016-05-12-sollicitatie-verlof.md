@@ -70,7 +70,7 @@ Enkele kleine aanpassingen lijken me ook voldoende:
   Zo kan iedereen perfect plannen.
 * Als men een contract heeft getekend dan vervalt het resterend sollicitatie verlof. Sollicitatie-verlof is een vangnet om
   de kans te krijgen ander werk te vinden. Niet om zich te verbeteren want dan zou iedere werknemer recht hebben op dit 
-  verlof. Daarnaast is het ook nogal respectloos ten opzichte van de nieuwe werkgever om in te gaan op een zijn aanbod, maar
+  verlof. Daarnaast is het ook nogal respectloos ten opzichte van de nieuwe werkgever om in te gaan op zijn aanbod, maar
   toch verder te zoeken.
 
 
