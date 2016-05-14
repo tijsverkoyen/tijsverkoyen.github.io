@@ -39,6 +39,7 @@
   }
 
   li > span {
+    font-size: $default-font-size;
     border: 1px solid lighten($accent-color, 50%);
   }
 
