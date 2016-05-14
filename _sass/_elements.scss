@@ -39,8 +39,13 @@ hr.star-primary {
 
 // image styling for my own picture on the homepage
 img.me-picture {
-  max-width: 320px;
   border: 1px solid $white;
+}
+
+@media(min-width: 768px) {
+  img.me-picture {
+    max-width: 320px;
+  }
 }
 
 // button to return to the top
