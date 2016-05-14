@@ -66,7 +66,7 @@ blockquote {
   box-shadow: -7px -7px 20px #e2e2e2;
   padding: $default-vertical-padding / 2 $default-horizontal-padding $default-vertical-padding / 4;
   position: relative;
-  margin: $default-vertical-margin $default-horizontal-margin $default-vertical-margin * 2 $default-horizontal-margin * 2;
+  margin: $default-vertical-margin $default-horizontal-margin / 2 $default-vertical-margin * 2;
 
   &:after {
     border-left: solid 10px transparent;
@@ -87,3 +87,10 @@ blockquote {
     }
   }
 }
+
+@media(min-width: 768px) {
+  blockquote {
+    margin: $default-vertical-margin $default-horizontal-margin $default-vertical-margin * 2 $default-horizontal-margin * 2;
+  }
+}
+
