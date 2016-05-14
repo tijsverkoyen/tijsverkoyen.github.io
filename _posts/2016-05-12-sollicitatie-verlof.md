@@ -74,7 +74,7 @@ Enkele kleine aanpassingen lijken me ook voldoende:
   toch verder te zoeken.
 
 
-<small>Voor alle duidelijkheid: deze situaties hebben zich niet voorgedaan bij Sumo Coders, maar de aankondiging van een 
+<small>Voor alle duidelijkheid: deze situaties hebben zich niet voorgedaan bij SumoCoders, maar de aankondiging van een 
 ontslag deed me wel even stilstaan bij deze situaties.</small>
 
 {% include _sumo_disclaimer_nl.html %}
