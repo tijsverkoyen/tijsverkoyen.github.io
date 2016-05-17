@@ -39,7 +39,7 @@ a native integration, it kinda sucks for us for some reasons:
 grouped per project and where the errors can be managed. In our projects we have an error handler that posts the errors
 to our Errbit instance.
 
-So wouldn't it be nice to see a message when an error occurs? Errbit offers a native integration, but it has the disadvantage 
+So wouldn't it be nice to see a message when an error occurs? Errbit offers a native Slack integration, but it has the disadvantage 
 that you need a specific hook url per project, which would require a lot of administration.
 
 ## VoipCenter + TeamLeader
@@ -55,8 +55,8 @@ Because we don't like to pay a [gazilion dollars/euros](https://github.com/blog/
 to be able to have Git repository management, we have used [GitLab](https://about.GitLab.com/) CE since (I think) the 
 start of SumoCoders. 
 
-We use GitLab for Pull Request, Code reviewing, ... So every time a PR is made it has to be reviewed by another person. So 
-wouldn't it be nice if we get notifications when a new PR is made, a PR is merged?
+We use GitLab for Pull Request, Code reviewing, ... So every time a Merge Request is made it has to be reviewed by another person. So 
+wouldn't it be nice if we get notifications when a new one is made, or merged?
 
 Integrated in GitLab is [GitLab CI](https://about.GitLab.com/GitLab-ci/), so when a PR is made it will run our tests. Wouldn't
 it be nice if we got notified if a build passed or failed?
