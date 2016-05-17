@@ -223,3 +223,6 @@ it is not provided, or it is incomplete.
 <br />
 What I took away is that you should log every request to be able to debug everything properly, and write serious defensive 
 code, which tries to take every possible situation into account.
+
+And I wrote my first npm-package: [teamleader](https://www.npmjs.com/package/teamleader) to help me with the request I had
+to make to the TeamLeader API.
