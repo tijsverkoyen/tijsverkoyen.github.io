@@ -118,14 +118,18 @@ Once we receive such a request we will convert the incoming call into a nice obj
 which will be converted by the Slack-client into a nice message, which shows the tasknumber, taskname, assignee, due-date, 
 estimate (if provided) and which is also a link to the task in Active Collab.
 
-<img src="/assets/posts/2016-06-20-slack-active-collab-1.png" class="img-responsive" style=">
+<div class="thumbnail" style="max-width: 722px;">
+    <img src="/assets/posts/2016-06-20-slack-active-collab-1.png" class="img-responsive">
+</div>
 
 In the native implementation it showed a lot more information, for instance the whole description of the task, which is
 kind of useless in the Slack-channel.
 
 When a task is completed it shows:
 
-<img src="/assets/posts/2016-06-20-slack-active-collab-2.png" class="img-responsive">
+<div class="thumbnail" style="max-width: 722px;">
+    <img src="/assets/posts/2016-06-20-slack-active-collab-2.png" class="img-responsive">
+</div>
 
 Where the native implementation shows the full information again, which is pointless, because the person who was assigned
 only needs all the information, the other channel-members should only know that the task is completed.
@@ -135,7 +139,9 @@ only needs all the information, the other channel-members should only know that 
 In the past we received a mail for every 1<super>st</super>, 10<super>th</super>, 100<super>th</super, ... time an error 
 occured via mail. While now we receive it every 1, 2, 3 and then every 10<super>th</super>-time, directly in the channel.
 
-<img src="/assets/posts/2016-06-20-slack-errbit.png" class="img-responsive">
+<div class="thumbnail" style="max-width: 722px;">
+    <img src="/assets/posts/2016-06-20-slack-errbit.png" class="img-responsive">
+</div>
 
 This is not done by the native Slack-integration, but it is handled by our own implemenation because with the native 
 implementation every occurence is posted in the channel. The configuration of the webhook is done wit the 
@@ -154,7 +160,9 @@ When a result is found (or not) we build a message object. This message is dispa
 The Slack-client will transform the message into a message which contains the basic information about the company (name + phone), 
 or contact (name, compant, cell, phone, email), as you can see in the screenshot below:
 
-<img src="/assets/posts/2016-06-20-slack-voipcenter-teamleader.png" class="img-responsive">
+<div class="thumbnail" style="max-width: 722px;">
+    <img src="/assets/posts/2016-06-20-slack-voipcenter-teamleader.png" class="img-responsive">
+</div>
 
 ### GitLab-integration
 
@@ -163,15 +171,18 @@ When we link a GitLab-repo to a channel the webhook is configured by the `/sumo 
 This shows a message in Slack every time a Merge Request is created, with the name of name and assignee. When a Merge Request
 is merged or closed it also shows a message.
 
-<img src="/assets/posts/2016-06-20-slack-gitlab-merge-request.png" class="img-responsive">
+<div class="thumbnail" style="max-width: 722px;">
+    <img src="/assets/posts/2016-06-20-slack-gitlab-merge-request.png" class="img-responsive">
+</div>
 
 Once again the merge is handled differently then the creation of a new Merge Request to not clutter the channel with 
 useless information.
 
 When a build succeeds/fails a message will be shown in the channel like this:
 
-<img src="/assets/posts/2016-06-20-slack-gitlab-build.png" class="img-responsive">
-
+<div class="thumbnail" style="max-width: 722px;">
+    <img src="/assets/posts/2016-06-20-slack-gitlab-build.png" class="img-responsive">
+</div>
 
 ## What did I learn
 
@@ -209,6 +220,6 @@ just not enough to handle it without making a lot of extra calls to the API. Or 
 For example, in GitLab the webhooks for the Merge Request contain data about the user and project, while in the Build-request 
 it is not provided, or it is incomplete.
 
-
+<br />
 What I took away is that you should log every request to be able to debug everything properply, and write serious defensive 
 code, which tries to take every possible situtation into account.
