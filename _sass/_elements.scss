@@ -94,3 +94,12 @@ blockquote {
   }
 }
 
+// thumbnail styling
+.thumbnail {
+  background: $white;
+  border: 1px solid #e2e2e2;
+  border-radius: $default-vertical-padding / 8;
+  box-shadow: -7px -7px 20px #e2e2e2;
+  padding: 0;
+  margin: $default-vertical-margin $default-horizontal-margin / 2;
+}
