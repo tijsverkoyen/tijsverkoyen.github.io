@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Active Collab, Errbit, VoipCenter and GitLab notifications in Slack"
-date:   2016-01-01 13:37:01
-image:  2016-06-20-slack-active-collab-errbit-voipcenter-gitlab.gif
+date:   2016-06-01 13:37:01
+image:  2016-06-01-slack-active-collab-errbit-voipcenter-gitlab.gif
 comments: true
 ---
 TL;DR: I wrote something to show notifications in specific channels from Active Collab, Errbit and GitLab, and I wanted
@@ -119,7 +119,7 @@ Which will be converted by the Slack client into a nice message, which shows the
 estimate (if provided). The message is also a link to the task in Active Collab.
 
 <div class="thumbnail" style="max-width: 722px;">
-    <img src="/assets/posts/2016-06-20-slack-active-collab-1.png" class="img-responsive">
+    <img src="/assets/posts/2016-06-01-slack-active-collab-1.png" class="img-responsive">
 </div>
 
 In the native implementation it showed a lot more information, for instance the whole description of the task, which is
@@ -128,7 +128,7 @@ kind of useless in the Slack channel.
 When a task is completed it shows:
 
 <div class="thumbnail" style="max-width: 722px;">
-    <img src="/assets/posts/2016-06-20-slack-active-collab-2.png" class="img-responsive">
+    <img src="/assets/posts/2016-06-01-slack-active-collab-2.png" class="img-responsive">
 </div>
 
 Whereas the native implementation shows the full information again, which is pointless, because the person who was assigned
@@ -140,7 +140,7 @@ In the past we received a mail for every 1<super>st</super>, 10<super>th</super>
 occured via mail. While now we receive it every 1, 2, 3 and then every 10<super>th</super>-time, directly in the channel.
 
 <div class="thumbnail" style="max-width: 722px;">
-    <img src="/assets/posts/2016-06-20-slack-errbit.png" class="img-responsive">
+    <img src="/assets/posts/2016-06-01-slack-errbit.png" class="img-responsive">
 </div>
 
 This is not done by the native Slack integration, but it is handled by our own implemenation because with the native 
@@ -161,7 +161,7 @@ The Slack client will transform the message into a message which contains the ba
 or contact (name, compant, cell, phone, email), as you can see in the screenshot below:
 
 <div class="thumbnail" style="max-width: 722px;">
-    <img src="/assets/posts/2016-06-20-slack-voipcenter-teamleader.png" class="img-responsive">
+    <img src="/assets/posts/2016-06-01-slack-voipcenter-teamleader.png" class="img-responsive">
 </div>
 
 ### GitLab integration
@@ -172,7 +172,7 @@ This shows a message in Slack every time a Merge Request is created, with the na
 is merged or closed it also shows a message.
 
 <div class="thumbnail" style="max-width: 722px;">
-    <img src="/assets/posts/2016-06-20-slack-gitlab-merge-request.png" class="img-responsive">
+    <img src="/assets/posts/2016-06-01-slack-gitlab-merge-request.png" class="img-responsive">
 </div>
 
 Once again the merge is handled different from the creation of a new Merge Request to not clutter the channel with 
@@ -181,7 +181,7 @@ useless information.
 When a build succeeds/fails a message will be shown in the channel like this:
 
 <div class="thumbnail" style="max-width: 722px;">
-    <img src="/assets/posts/2016-06-20-slack-gitlab-build.png" class="img-responsive">
+    <img src="/assets/posts/2016-06-01-slack-gitlab-build.png" class="img-responsive">
 </div>
 
 ## What did I learn

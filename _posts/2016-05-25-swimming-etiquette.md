@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Swimming Etiquette"
-date:   2016-06-01 13:37:00
-image:  2016-06-01-swimming-etiquette.gif
+date:   2016-05-25 13:37:00
+image:  2016-05-25-swimming-etiquette.gif
 ---
 I really love to swim, and I do so on regular bases.
 
