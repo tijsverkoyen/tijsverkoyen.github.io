@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Swimming Etiquette"
-date:   2016-05-25 13:37:00
+date:   2016-05-25 13:37:01
 image:  2016-05-25-swimming-etiquette.gif
 ---
 I really love to swim, and I do so on regular bases.
