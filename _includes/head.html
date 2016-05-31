@@ -21,19 +21,30 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+  <meta property="og:type" content="article" />
+  <meta property="fb:app_id" content="540330522835412" />
   {% if page.collection == 'posts' %}
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
     <meta property="og:image" content="{{ site.url }}/assets/posts/{{ page.image }}" />
-    <meta property="fb:app_id" content="540330522835412" />
+  {% else %}
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="Tijs is a developer with a lot of experience in PHP, MySQL, JavaScript and related technologies. He runs a company called SumoCoders." />
+    <meta property="og:image" content="{{ site.url }}/assets/site/me.jpg" />
+  {% endif %}
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@tijsverkoyen" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@tijsverkoyen" />
+  {% if page.collection == 'posts' %}
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
     <meta name="twitter:image" content="{{ site.url }}/assets/posts/{{ page.image }}" />
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="Tijs is a developer with a lot of experience in PHP, MySQL, JavaScript and related technologies. He runs a company called SumoCoders." />
+    <meta name="twitter:image" content="{{ site.url }}/assets/site/me.jpg" />
   {% endif %}
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
