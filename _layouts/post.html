@@ -73,14 +73,14 @@
         <ul class="pager">
           {% if page.next %}
           <li class="previous">
-            <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">
+            <a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}" rel="next" id="gaNextArticle">
               <span aria-hidden="true">&larr;</span> Next <span class="hidden">post: {{ page.next.title }}</span>
             </a>
           </li>
           {% endif %}
           {% if page.previous %}
           <li class="next">
-            <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}">
+            <a href="{{ page.previous.url }}" title="Previous post: {{ page.previous.title }}" rel="previous" id="gaPreviousArticle">
               Previous
               <span class="hidden">post: {{ page.previous.title }}</span><span aria-hidden="true">&rarr;</span>
             </a>
