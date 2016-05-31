@@ -22,11 +22,12 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   {% if page.collection == 'posts' %}
-    <meta property="og:url"                content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="{{ page.title }}" />
-    <meta property="og:description"        content="{{ page.excerpt | strip_html | strip_newlines }}" />
-    <meta property="og:image"              content="{{ site.url }}/assets/posts/{{ page.image }}" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+    <meta property="og:image" content="{{ site.url }}/assets/posts/{{ page.image }}" />
+    <meta property="fb:app_id" content="540330522835412" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@tijsverkoyen" />
