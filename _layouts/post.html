@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body id="page-top" class="post">
+<body id="page-top" class="post" vocab="http://schema.org/" typeof="WebPage" mainEntityOfPage>
 {% include scripts_after_body.html %}
 
 {% include menu.html %}
@@ -12,10 +12,11 @@
 <section id="content">
   <div class="container" id="blog-post">
     <div class="row">
-      <article class="col-md-10 col-md-offset-1" itemid="{{ page.id }}" itemscope itemtype="http://schema.org/Article">
+      <article class="col-md-10 col-md-offset-1" itemid="{{ page.id }}" itemscope itemtype="http://schema.org/Article" itemprop="mainEntityOfPage">
+        <link itemprop="mainEntityOfPage" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
         <div class="row ">
           <div class="col-md-12 text-center">
-            <h1>
+            <h1 itemprop="headline">
               <span itemprop="name">{{ page.title }}</span>
             </h1>
             <hr class="star-primary">
@@ -26,7 +27,9 @@
                   {% else %}
                   by
                   {% endif %}
-                  <span itemprop="author">Tijs Verkoyen</span>
+                  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">Tijs Verkoyen</span>
+                  </span>
                 </span>
               <small>
                 {% if page.language == 'nl' %}
@@ -37,6 +40,23 @@
                 <span itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date : '%d/%m/%Y' }}</span>.
               </small>
             </p>
+            <div class="hidden">
+              <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <img src="{{ site.url }}/assets/posts/{{ page.image }}" />
+                <meta itemprop="url" content="{{ site.url }}/assets/posts/{{ page.image }}">
+                <meta itemprop="width" content="512">
+                <meta itemprop="height" content="512">
+              </div>
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="{{ site.url }}/assets/site/me.jpg"/>
+                  <meta itemprop="url" content="{{ site.url }}/assets/site/me.jpg">
+                  <meta itemprop="width" content="512">
+                  <meta itemprop="height" content="512">
+                </div>
+                <meta itemprop="name" content="Tijs Verkoyen">
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -44,6 +64,8 @@
             {{ content }}
           </div>
         </div>
+        <meta itemprop="image" src="{{ site.url }}/assets/posts/{{ page.image }}">
+        <meta itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}">
       </article>
     </div>
     <div class="row">

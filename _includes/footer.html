@@ -39,8 +39,15 @@
         </div>
         <div class="footer-col col-md-4">
           <h3>About me</h3>
-          <p>
-            I'm Tijs, a Belgian PHP Developer. I run a company called <a href="http://sumocoders.be">SumoCoders</a>.
+          <p vocab="http://schema.org/" typeof="Person">
+            I'm <span property="givenName">Tijs<span class="sr-only" property="familyName"> Verkoyen</span></span>,
+            <span property="description">a Belgian PHP Developer</span>. I run a company called
+            <a href="http://sumocoders.be">SumoCoders</a>.
+
+            <meta property="birthDate" content="1985-06-20" />
+            <meta property="image" content="{{ site.url }}/assets/site/me.jpg" />
+            <meta property="url" content="{{ site.url }}" />
+            <meta itemprop="gender" content="Male" />
           </p>
         </div>
       </div>
@@ -53,7 +60,8 @@
           © Tijs Verkoyen
           <br />
           <small>
-            Theme inspired on <a href="http://startbootstrap.com/template-overviews/freelancer/">Freelancer by Bootswatch</a>
+            Theme inspired on
+            <a href="http://startbootstrap.com/template-overviews/freelancer/">Freelancer by Bootswatch</a>
             &mdash;
             <a href="https://github.com/tijsverkoyen/tijsverkoyen.github.io/edit/master/{{ page.path }}">
               Found a typo? Edit it on GitHub

@@ -2,9 +2,9 @@
 title: Tijs Verkoyen
 email: site@verkoyen.eu
 author: Tijs Verkoyen
-description: This is a site from/about Tijs Verkoyen.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://verkoyen.eu" # the base hostname & protocol for your site
+description: Tijs is a developer with a lot of experience in PHP, MySQL, JavaScript and related technologies. He runs a company called SumoCoders.
+baseurl: ""
+url: "http://verkoyen.eu"
 
 # Post settings
 permalink: /blog/:year/:month/:title
