@@ -26,13 +26,13 @@
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ page.title }}" />
     <meta property="og:description"        content="{{ page.excerpt | strip_html | strip_newlines }}" />
-    <meta property="og:image"              content="{{ page.image }}" />
+    <meta property="og:image"              content="{{ site.url }}/assets/posts/{{ page.image }}" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@tijsverkoyen" />
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
-    <meta name="twitter:image" content="{{ page.image }}" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/posts/{{ page.image }}" />
   {% endif %}
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
