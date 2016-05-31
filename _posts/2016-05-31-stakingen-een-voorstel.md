@@ -8,8 +8,8 @@ comments: true
 ---
 Vandaag was er een staking van de overheidsvakbonden, waarbij men actie voert tegen de besparingen van de regeringen.
 
-> <strong>sta·ken</strong><small>(staakte, heeft gestaakt)</small>
-> 1. met iets ophouden: de betalingen staken
+> <strong>sta·ken</strong><small style="display: inline;">(staakte, heeft gestaakt)</small><br />
+> 1. met iets ophouden: de betalingen staken<br />
 > 2. tijdelijk het werk neerleggen om betere arbeidsvoorwaarden te krijgen of als protest
 > <footer>bron: <a href="http://www.vandale.be/gratis-woordenboek/betekenis/nederlands/staken">Van Dale</a></footer>
 
