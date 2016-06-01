@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Active Collab, Errbit, VoipCenter and GitLab notifications in Slack"
-date:   2016-06-01 13:37:01
+date:   2016-06-01 06:37:01
 image:  2016-06-01-slack-active-collab-errbit-voipcenter-gitlab.gif
 comments: true
 ---
