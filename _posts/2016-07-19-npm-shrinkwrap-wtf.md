@@ -9,7 +9,7 @@ packages instead of writing another (crappy) implementation of something trivial
 
 Package managers also help people to not have a shitload of not-important code in their source-control.
 
-But all of this depends on how the dependecy manager is implemented. At this point I think `npm` is one of the most
+But all of this depends on how the dependency manager is implemented. At this point I think `npm` is one of the most
 idiotic and stupid systems around. I am aware that this is a bold statement, and probably not everyone will agree with
 me. But let me explain some of the problems I have with `npm`.
 
@@ -37,18 +37,17 @@ If you run `npm install` you will end up with **3** versions of the `js-tokens`-
 Not only will the 3 versions of the js-tokens introduce issues at some point, but it also uses 7.9 MB on the diskspace, 
 while I just required 3 (simple) packages ...
 
-This is not only the fault of the `npm`-maintainers, a big part off this issue is the responsibility of package-maintainers.
+This is not only the fault of the `npm`-maintainers, a big part of this issue is the responsibility of package-maintainers.
 If every maintainer uses [SemVer](http://semver.org/), and use correct version-constraints in their `package.json`-file, 
 most installed packages will be re-used and not installed specific for a package as this is available in `npm`.
 
-In my opinion, you should not be able to use different versions of the same package in a project. I think 
-[Composer](https://getcomposer.org/) is doing a much better job on this.
-
+In my opinion, you should not be able to use different versions of the same package in a project. I think this better 
+detected by [Composer](https://getcomposer.org/), but they have the "benefit" that the same namespace can only be used once.
 
 ## Locking version (`npm shrinkwrap`)
 
 Locking versions is something you want to do if you know everything works, so you do not run into unpleasant surprises
-when you just have deployed you "working" version to production and some rare bug in a patch-release messes everything up.
+when you just have deployed your "working" version to production and some rare bug in a patch-release messes everything up.
 
 Therefore `npm` has [`npm shrinkwrap`](https://docs.npmjs.com/cli/shrinkwrap). This will generate a file called 
 `npm-shrinkwrap.json`, wherein all the specific installed versions are stored.
@@ -111,14 +110,14 @@ So we run `npm install; npm shrinkwrap`, because we can't shrinkwrap without ins
 
 
 As you can see there are a lot of packages included that in reality are dependencies of the `node-sass`-package. So if we
-commit our `npm-shrinkwrap.json`-file into our version-control-system, and on deploy the `npm install --production` is 
-executed, the shrinkwrap-file is used, so all the depencies of the `node-sass`-package are installed but are just useless.
+commit our `npm-shrinkwrap.json`-file into our version control system, and on deploy the `npm install --production` is 
+executed, the shrinkwrap-file is used, so all the dependencies of the `node-sass`-package are installed but are just useless.
 
 I know this can be resolved by running `npm install --production; npm shrinkwrap` instead at the start of the project. 
 And you should keep this in mind, when you are developing (aka: installed dev-dependencies) and installing new packages.
 
 In my opinion this makes working with the shrinkwrap-files just really hard. Once again I think `npm` should take a look
-on how [Composer](https://getcomposer.org/) works by separating the packages into production and development in the
+at how [Composer](https://getcomposer.org/) works by separating the packages into production and development in the
 shrinkwrap-file.
 
 <br />
