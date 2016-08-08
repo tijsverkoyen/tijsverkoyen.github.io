@@ -3,6 +3,7 @@ layout: post
 title:  "npm shrinkwrap WTF?"
 date:   2016-07-19 09:37:00
 image:  2016-07-19-npm-shrinkwrap-wtf.gif
+comments: true
 ---
 I really like package-managers, I think they help a lot of developers save time and make it a lot easier to use existing 
 packages instead of writing another (crappy) implementation of something trivial.
