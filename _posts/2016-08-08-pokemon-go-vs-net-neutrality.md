@@ -29,10 +29,8 @@ since they're not treating all data the same.
 Ofcourse their is a legion of lawyers involved in this kind of actions, and so this kind of actions is legal, because the 
 EU Regulations have been a pity, and allow some loopholes. Also Belgium doesn't have any laws regulating Net neutrality (yet).
 
-I really think some marketeers should get some kicks in their balls, just for having these idea's and execute them, while
-there is a gray zone on this regulations. It would charm them if they stood up and tell the general public about not 
-being able to zero rate the traffic for Pokémon, Spotify, ... because of the net neutrality. Or just drop the costs for 
-mobile data at all ;-)
+I really think marketeers should think before they act. They should check with their legal department if there is a 
+gray-zone (because Belgium does not have implemented the EU-regulations).
 
-
+Maybe they should treat all the data the same and just don't charge for *all* mobile data instead.
 
