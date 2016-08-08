@@ -27,7 +27,7 @@ But there is a really big issue with this kind of marketing-campaigns. Since the
 are [zero rating](https://en.wikipedia.org/wiki/Zero-rating). In direct violation with [Net neutrality](https://en.wikipedia.org/wiki/Net_neutrality) 
 since they're not treating all data the same.
 
-Ofcourse their is a legion of lawyers involved in this kind of actions, and so this kind of actions is legal, because the 
+Ofcourse there is a legion of lawyers involved in these kind of actions, these kind of actions are legal, because the 
 EU Regulations have been a pity, and allow some loopholes. Also Belgium doesn't have any laws regulating Net neutrality (yet).
 
 I really think marketeers should think before they act. They should check with their legal department if there is a 
