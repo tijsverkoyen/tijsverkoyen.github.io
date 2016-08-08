@@ -10,7 +10,7 @@ Since 16 july, Pokémon GO is officialy released in Belgium. Hurray!
 > [#PokemonGO](https://twitter.com/hashtag/PokemonGO?src=hash) is now available on Android and iOS devices in Belgium, Netherlands, and Switzerland. 
 > <footer>source: <a href="https://twitter.com/PokemonGoNews/status/754250662553280512">Pokémon GO News - July 16, 2016</a></footer>
 
-Like usual, every marketing departments likes to lift on the <strike>success</strike>hype of people wandering around 
+Like usual, every marketing department likes to lift on the <strike>success</strike>hype of people wandering around 
 like zombies looking for food.
 
 So some phone providers launched campaigns with free traffic for the Pokémon GO data.
