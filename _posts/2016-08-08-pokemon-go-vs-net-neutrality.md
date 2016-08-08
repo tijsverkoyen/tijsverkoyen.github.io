@@ -22,14 +22,12 @@ So some phone providers launched campaigns with free traffic for the Pokémon GO
 Proximus does this also, but I can't find their tweet, instead they have this article on their website:
  [http://www.proximus.be/pokemon](http://www.proximus.be/pokemon)
 
-But there is a real big issue with this kind of marketing-campaigns. As they don't rate the traffic for Pokémon Go, they
-are "[zero rating](https://en.wikipedia.org/wiki/Zero-rating)" this traffic.
-
-In my opinion, this is in direct violation with the [Net neutrality](https://en.wikipedia.org/wiki/Net_neutrality) principles 
-as they don't treat all data in the same.
+But there is a really big issue with this kind of marketing-campaigns. Since they don't rate the Pokemon Go traffic, they
+are [zero rating](https://en.wikipedia.org/wiki/Zero-rating). In direct violation with [Net neutrality](https://en.wikipedia.org/wiki/Net_neutrality) 
+since they're not treating all data the same.
 
 Ofcourse their is a legion of lawyers involved in this kind of actions, and so this kind of actions is legal, because the 
-EU Regulations has been a pity, and allowed some loopholes. Also Belgium doesn't have any laws regulating the Net neutrality (yet).
+EU Regulations have been a pity, and allow some loopholes. Also Belgium doesn't have any laws regulating Net neutrality (yet).
 
 I really think some marketeers should get some kicks in their balls, just for having these idea's and execute them, while
 there is a gray zone on this regulations. It would charm them if they stood up and tell the general public about not 
