@@ -33,4 +33,3 @@ I really think marketeers should think before they act. They should check with t
 gray-zone (because Belgium does not have implemented the EU-regulations).
 
 Maybe they should treat all the data the same and just don't charge for *all* mobile data instead.
-
