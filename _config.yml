@@ -4,7 +4,7 @@ email: site@verkoyen.eu
 author: Tijs Verkoyen
 description: Tijs is a developer with a lot of experience in PHP, MySQL, JavaScript and related technologies. He runs a company called SumoCoders.
 baseurl: ""
-url: "http://verkoyen.eu"
+url: "https://verkoyen.eu"
 
 # Post settings
 permalink: /blog/:year/:month/:title

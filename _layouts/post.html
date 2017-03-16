@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body id="page-top" class="post" vocab="http://schema.org/" typeof="WebPage" mainEntityOfPage>
+<body id="page-top" class="post" vocab="https://schema.org/" typeof="WebPage" mainEntityOfPage>
 {% include scripts_after_body.html %}
 
 {% include menu.html %}
@@ -12,7 +12,7 @@
 <section id="content">
   <div class="container" id="blog-post">
     <div class="row">
-      <article class="col-md-10 col-md-offset-1" itemid="{{ page.id }}" itemscope itemtype="http://schema.org/Article" itemprop="mainEntityOfPage">
+      <article class="col-md-10 col-md-offset-1" itemid="{{ page.id }}" itemscope itemtype="https://schema.org/Article" itemprop="mainEntityOfPage">
         <link itemprop="mainEntityOfPage" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
         <div class="row ">
           <div class="col-md-12 text-center">
@@ -95,7 +95,7 @@
         <div id="disqus_thread"></div>
         <script>
           var disqus_config = function() {
-            this.page.url = "http://verkoyen.eu{{ page.url }}";
+            this.page.url = "https://verkoyen.eu{{ page.url }}";
             this.page.identifier = "{{ page.id }}";
             this.page.title = "{{ page.title }} - Tijs Verkoyen";
           };

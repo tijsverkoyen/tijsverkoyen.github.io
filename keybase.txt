@@ -4,7 +4,7 @@ https://keybase.io/tijsverkoyen
 
 I hereby claim:
 
-  * I am an admin of http://verkoyen.eu
+  * I am an admin of https://verkoyen.eu
   * I am tijsverkoyen (https://keybase.io/tijsverkoyen) on keybase.
   * I have a public key with fingerprint 98F4 11C9 A663 766E 9B95  92F0 5E8E 4608 6547 30E5
 
