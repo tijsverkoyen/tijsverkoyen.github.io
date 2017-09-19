@@ -58,6 +58,15 @@
   p.meta-info {
     margin-bottom: $default-vertical-margin;
   }
+
+  div.disclaimer {
+    font-size: $default-font-size;
+    margin: $default-vertical-margin 0;
+
+    p {
+      margin-bottom: $default-vertical-margin / 4;
+    }
+  }
 }
 
 @media(min-width: 767px) {

@@ -88,6 +88,16 @@ blockquote {
   }
 }
 
+div.email {
+  blockquote {
+    margin-bottom: $default-vertical-margin;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
 @media(min-width: 768px) {
   blockquote {
     margin: $default-vertical-margin $default-horizontal-margin $default-vertical-margin * 2 $default-horizontal-margin * 2;
