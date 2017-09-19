@@ -8,8 +8,11 @@ url: "https://verkoyen.eu"
 
 # Post settings
 permalink: /blog/:year/:month/:title
-paginate: 9
+paginate: 12
 paginate_path: "/blog/page-:num/"
+future: false
+show_drafts: false
+
 
 # Build settings
 markdown: kramdown
