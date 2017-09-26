@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Gianni - Introductie"
-date:   2017-09-21 09:01:00
-image:  2017-09-21-gianni-deel-1-introductie.jpg
+date:   2017-09-25 09:01:00
+image:  2017-09-25-gianni-deel-1-introductie.jpg
 comments: false
 ---
 Lang geleden heb ik al mijn spaargeld bij elkaar geschraapt, ben ik naar de bank gegaan en heb ik een appartement 

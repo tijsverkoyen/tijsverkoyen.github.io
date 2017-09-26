@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Gianni (deel 2) - Eerste huurachterstand"
-date:   2017-09-25 09:02:00
-image:  2017-09-25-gianni-deel-2-eerste-huurachterstand.jpg
+date:   2017-09-26 09:02:00
+image:  2017-09-26-gianni-deel-2-eerste-huurachterstand.jpg
 comments: false
 ---
 Op 3 november 2015 is de huurovereenkomst getekend en in dezelfde week is <span itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Gianni</span> <span itemprop="familyName">Ceulemans</span></span> in het appartement getrokken.
