@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gianni (deel 10) - Opzeg"
-date:   2017-10-30 09:10:00
+date:   2017-10-30 07:10:00
 image:  2017-10-30-gianni-deel-10-opzeg.gif
 comments: false
 ---
