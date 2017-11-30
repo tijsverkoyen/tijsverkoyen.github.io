@@ -47,7 +47,7 @@ We hebben heel wat zaken in de plaatsbeschrijving opgenomen, en die zijn ook ond
 <div id="afspraak-sleutels">
 We spraken af, aangezien ze nog volop aan het verhuizen waren, dat de sleutels de volgende dag zouden afgegeven worden
 bij Tijs op kantoor. Indien we ze de volgende dag niet hadden zou een maand bezettingsvergoeding ingaan.
-</div<
+</div>
 
 We konden dus met een bang hart naar huis.
 
