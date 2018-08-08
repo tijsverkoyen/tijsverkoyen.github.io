@@ -5,19 +5,18 @@ date:   2018-08-07 09:23:00
 image:  2018-08-07-scaling-gitlab-runner-on-google-cloud-platform.gif
 comments: false
 ---
-At [SumoCoders](https://sumocoders.be/) we have a self-hosted GitLab instance, 
-which we use heavily. 
+At [SumoCoders](https://sumocoders.be/) we have a self-hosted GitLab instance.
 
-For each projects, we have some CI-jobs, some of them are as simple as checking 
+For each project, we have some CI-jobs. Some of them are as simple as checking 
 code styles, others are more complex like building assets. These jobs are 
 handled by `gitlab-runners`.
 
-In the past we had several droplets (servers) on Digital Ocean which were used
-as `gitlab-runners`. These instances were running 24/7, and could only handle
-a limited number of jobs.
+In the past we used several droplets (servers) on Digital Ocean as `gitlab-runners`. 
+These instances were running 24/7, and could only handle a limited number of 
+jobs.
 
-With all cloud platforms like AWS and Google Cloud Platform that allow to use
-resources on demand a more cost effective setup can be accomplished.
+With platforms like Google Cloud Platform we ar able to use resources on demand.
+With that we can realize a more cost effective setup.
 
 In this blog post we will look at how you can get this up and running. 
 
@@ -50,7 +49,7 @@ gcloud compute --project=gitlab-autoscale-runners instances create gitlab-runner
 
 This creates an instance named `gitlab-runner`, with the following specs:
 
-* Preferably in Belgium as we live and work in Belgium, this is fixed by using 
+* As we live and work in Belgium we prefer a server nearby, this is done by using
   the `--zone` flag. <small>([All available zones](https://cloud.google.com/compute/docs/regions-zones/))</small>
 * As minimal as possible, as we will use docker+machine to run the jobs itself. 
   The node will only be an orchestrator and does not need  a lot of resources. 
@@ -60,7 +59,7 @@ This creates an instance named `gitlab-runner`, with the following specs:
 ## 4. Install the required components
 
 To be able to install packages on the instance you need to SSH into the instance.
-This can be done by using the `gcloud` cli tool:
+You can use the `gcloud` cli tool:
 
 ```shell
 gcloud compute ssh gitlab-runner
@@ -68,9 +67,9 @@ gcloud compute ssh gitlab-runner
 
 Once logged in you can install the components:
 
-1. Install Docker, you can follow the steps on: <https://docs.docker.com/cs-engine/1.12/#install-on-ubuntu-1404-lts-or-1604-lts>.
+1. Install Docker. Follow the steps on: <https://docs.docker.com/cs-engine/1.12/#install-on-ubuntu-1404-lts-or-1604-lts>.
 2. Install Docker Machine, follow the steps on: <https://docs.docker.com/machine/install-machine>.
-3. Install the GitLab Runner, which is nicely documented on: <https://docs.gitlab.com/runner/install/linux-repository.html#installing-the-runner>. You should follow the steps for Ubuntu.
+3. Install the GitLab Runner. Documented on: <https://docs.gitlab.com/runner/install/linux-repository.html#installing-the-runner>. You should follow the steps for Ubuntu.
 
 ## 5. Install a cache server
 
@@ -97,16 +96,16 @@ Create a directory: `mkdir /srv/minio/files/gitlab-runner-cache`.
 
 ## 6. Register the runner
 
-Once this is done you should register the runner, which is documented on: 
-<https://docs.gitlab.com/runner/register/index.html>. but in essence it is as
+Once done you should register the runner, documented on: 
+<https://docs.gitlab.com/runner/register/index.html>. In essence, it is as
 simple as running: `sudo gitlab-runner register` and answering the questions.
 
 When asked for the executor you need to answer: `docker+machine`
 
 ## 7. Configure the runner
 
-All of this is done in `/etc/gitlab-runner/config.toml`. Some sections are 
-already configured, others might need special attention.
+This is done in `/etc/gitlab-runner/config.toml`. Some sections are already 
+configured, others might need special attention.
 
 ### 7.1 Configure the concurrent runners
 
@@ -143,7 +142,7 @@ for more information on specific configuration keys.
 [runners.machine]
     # The number of always active machine
     IdleCount = 0
-    # The number of seconds a machine has to be idle before it is removed
+    # The number of seconds a machine has to be idle before removal
     # Google invoices per second after the first minute so it can be something low.
     IdleTime = 300
     MachineDriver = "google"
@@ -231,7 +230,7 @@ changes will be picked up automatically.
 
 ## Credits
 
-Credits where credits due, I followed most steps that are nicely documented in 
+Credits where credits due, I followed the steps documented in 
 [Autoscaling Gitlab-CI builds on preemptible Google-Cloud instances](https://webnugget.de/autoscaling-gitlab-ci-builds-on-preemptible-google-cloud-instances-2) 
-by Christian. In the steps above I added some extra's and tried to clarify some 
-things I spend some time on figuring it all out.
+by Christian. In the steps above I added some extra's and tried to clarify 
+things I spend time on figuring it all out.
