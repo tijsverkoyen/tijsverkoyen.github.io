@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Scaling Gitlab runner on Google Cloud Platform"
-date:   2018-08-07 09:23:00
+date:   2018-08-08 09:23:00
 image:  2018-08-07-scaling-gitlab-runner-on-google-cloud-platform.gif
 comments: false
 ---
