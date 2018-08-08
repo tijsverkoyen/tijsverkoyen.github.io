@@ -2,7 +2,7 @@
 layout: post
 title:  "Scaling Gitlab runner on Google Cloud Platform"
 date:   2018-08-08 09:23:00
-image:  2018-08-07-scaling-gitlab-runner-on-google-cloud-platform.gif
+image:  2018-08-08-scaling-gitlab-runner-on-google-cloud-platform.jpg
 comments: false
 ---
 At [SumoCoders](https://sumocoders.be/) we have a self-hosted GitLab instance.
