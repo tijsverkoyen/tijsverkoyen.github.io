@@ -8,18 +8,18 @@ comments: false
 At [SumoCoders](https://sumocoders.be/) we have a self-hosted GitLab instance, 
 which we use heavily. 
 
-On each projects we have some CI-jobs, some of them are as simple as checking 
-code styles, some of them build the assets with npm and push some static sites 
-on the production hosting. These jobs are handled by `gitlab-runner`'s.
+For each projects, we have some CI-jobs, some of them are as simple as checking 
+code styles, others are more complex like building assets. These jobs are 
+handled by `gitlab-runners`.
 
 In the past we had several droplets (servers) on Digital Ocean which were used
-as `gitlab-runner`'s. These instances were running 24/7, and could only handle
-a limited concurrent jobs.
+as `gitlab-runners`. These instances were running 24/7, and could only handle
+a limited number of jobs.
 
-At this point, with all cloud platforms like AWS and Google Cloud Platform a 
-more cost effective way of using GitLab-CI can be established.
+With all cloud platforms like AWS and Google Cloud Platform that allow to use
+resources on demand a more cost effective setup can be accomplished.
 
-Below you can find the steps I got to take to get this up and running. 
+In this blog post we will look at how you can get this up and running. 
 
 ## 1. Create a project on Google Cloud Platform
 
@@ -30,7 +30,7 @@ later on.
 
 ## 2. Install `gcloud` (optional)
 
-If you have not already installed it, install it now. You can follow the guide 
+If you have not installed it yet, install it now. You can follow the guide 
 at: <https://cloud.google.com/sdk/docs/>.
 
 ## 3. Create an instance for the `gitlab-runner`
@@ -51,10 +51,10 @@ gcloud compute --project=gitlab-autoscale-runners instances create gitlab-runner
 This creates an instance named `gitlab-runner`, with the following specs:
 
 * Preferably in Belgium as we live and work in Belgium, this is fixed by using 
-  the `--zone` flag.
+  the `--zone` flag. <small>([All available zones](https://cloud.google.com/compute/docs/regions-zones/))</small>
 * As minimal as possible, as we will use docker+machine to run the jobs itself. 
-  The node will only be an orchestrator and does not need that much resources. 
-  I choose a `f1-micro` for the machine-type.
+  The node will only be an orchestrator and does not need  a lot of resources. 
+  I chose a `f1-micro` for the machine-type.
 * Have a familiar OS, like Ubuntu.
 
 ## 4. Install the required components
@@ -88,8 +88,7 @@ docker run -it --restart always -p 9000:9000
     server /export
 ```
 
-Note the `accessKey` and `secretKey`, if needed you can find them in 
-`/srv/minio/config/config.json`. 
+The `accessKey` and `secretKey`, can be found in `/srv/minio/config/config.json`. 
 
 This will start a [Minio](https://minio.io/) container which will always restart. 
 You can stop the command, as the container will restart in the background.
@@ -106,9 +105,8 @@ When asked for the executor you need to answer: `docker+machine`
 
 ## 7. Configure the runner
 
-All of this is done in `/etc/gitlab-runner/config.toml`. Some of the 
-configuration will be there already, but some sections need some
-special attention.
+All of this is done in `/etc/gitlab-runner/config.toml`. Some sections are 
+already configured, others might need special attention.
 
 ### 7.1 Configure the concurrent runners
 
@@ -235,5 +233,5 @@ changes will be picked up automatically.
 
 Credits where credits due, I followed most steps that are nicely documented in 
 [Autoscaling Gitlab-CI builds on preemptible Google-Cloud instances](https://webnugget.de/autoscaling-gitlab-ci-builds-on-preemptible-google-cloud-instances-2) 
-by Christian. I the steps above I added some extra's and tried to clarify some 
+by Christian. In the steps above I added some extra's and tried to clarify some 
 things I spend some time on figuring it all out.
