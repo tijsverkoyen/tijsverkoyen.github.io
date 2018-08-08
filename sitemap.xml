@@ -1,11 +1,12 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
 <url>
   <loc>https://verkoyen.eu/</loc>
   <lastmod>2017-12-08T07:23:43+00:00</lastmod>
@@ -14,191 +15,14 @@
 <url>
   <loc>https://verkoyen.eu/blog/</loc>
   <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.50</priority>
+  <changefreq>monthly</changefreq>
 </url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/12/gianni-deel-21-collectieve-schuldenregeling</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/12/gianni-deel-20-gerechtsdeurwaarder</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-19-vuilaard</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/activecollab-tasks-in-phpstorm</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-18-hij-is-er-uit</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-17-het-vonnis</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-16-zitting-2</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-15-een-advocaat-beter-vroeg-dan-laat</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-14-de-zitting</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-13-verzoekschrift</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-12-radiostilte</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/11/gianni-deel-11-indexatie</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/page-2/</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/09/gianni-deel-2-eerste-huurachterstand</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-10-opzeg</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-7-ocmw</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-9-jaarvergadering</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-8-rva-update</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-6-rva</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-5-geen-loon</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/10/gianni-deel-4-aangetekende-brieven</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/09/gianni-deel-3-de-afspraak</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/09/gianni-deel-1-introductie</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/05/rebuild-reindex-messages-in-mail-app</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/05/de-lille-snapt-het-niet</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/page-3/</loc>
-  <lastmod>2017-12-08T07:24:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/03/zelfstandigen-zijn-geen-ondernemers</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/01/zuipende-politici-deel-2</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2017/01/zuipende-politici</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/08/pokemon-go-vs-net-neutrality</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/07/npm-shrinkwrap-wtf</loc>
-  <lastmod>2017-12-08T07:24:04+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/06/flikken-op-commissie</loc>
-  <lastmod>2017-12-08T07:24:03+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/06/slack-active-collab-errbit-gitlab</loc>
-  <lastmod>2017-12-08T07:24:03+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/05/stakingen-een-voorstel</loc>
-  <lastmod>2017-12-08T07:24:03+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/05/swimming-etiquette</loc>
-  <lastmod>2017-12-08T07:24:03+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/05/sollicitatie-verlof</loc>
-  <lastmod>2017-12-08T07:24:03+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://verkoyen.eu/blog/2016/05/hello-world</loc>
-  <lastmod>2017-12-08T07:24:03+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
+{% for post in site.posts %}
+  <url>
+    <loc>https://verkoyen.eu{{ post.url | prepend: site.baseurl }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <priority>0.80</priority>
+  </url>
+{% endfor %}
 </urlset>
