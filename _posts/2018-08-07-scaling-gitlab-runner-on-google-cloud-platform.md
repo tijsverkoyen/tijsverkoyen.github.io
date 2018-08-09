@@ -15,7 +15,7 @@ In the past we used several droplets (servers) on Digital Ocean as `gitlab-runne
 These instances were running 24/7, and could only handle a limited number of 
 jobs.
 
-With platforms like Google Cloud Platform we ar able to use resources on demand.
+With platforms like Google Cloud Platform we are able to use resources on demand.
 With that we can realize a more cost effective setup.
 
 In this blog post we will look at how you can get this up and running. 
