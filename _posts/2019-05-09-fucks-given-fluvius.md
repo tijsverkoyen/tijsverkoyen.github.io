@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Fucks given - Fluvius"
-date:   2019-04-28 09:23:00
-image:  2019-04-28-fucks-given-fluvius.jpg
+date:   2019-05-09 09:23:00
+image:  2019-05-09-fucks-given-fluvius.jpg
 comments: false
 ---
 Ergens vorig jaar zijn Eandis en Infrax, twee bedrijven die het beheer deden van 
